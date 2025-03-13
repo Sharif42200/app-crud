@@ -25,6 +25,10 @@
                     <td>{{ $product->quantity }}</td>
                     <td>{{ $product->description }}</td>
                     <td>{{ $product->price }}</td>
+                    <td>
+                        <!-- route er productId te $product gulo rakhtesi -->
+                        <a href="{{ route('product.edit', [ 'productId' => $product ] ) }}">Edit</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
